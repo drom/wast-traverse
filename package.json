@@ -1,0 +1,31 @@
+{
+  "name": "wast-traverse",
+  "version": "0.0.1",
+  "description": "webassembly traversal tool",
+  "main": "index.js",
+  "bin": {
+    "wast-traverse": "collect.js"
+  },
+  "scripts": {
+    "test": "git pull && git submodule init && git submodule update && git submodule status && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drom/wast-traverse.git"
+  },
+  "keywords": [
+    "wast"
+  ],
+  "author": "drom@drom.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drom/wast-traverse/issues"
+  },
+  "homepage": "https://github.com/drom/wast-traverse#readme",
+  "devDependencies": {
+    "eslint": "^1.7.1",
+    "jsof": "^0.1.1",
+    "lodash.merge": "^3.3.2",
+    "lodash.union": "^3.1.0"
+  }
+}
