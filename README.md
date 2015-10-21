@@ -1,4 +1,4 @@
-# WebAssembly traversal tool
+# WebAssembly AST traversal tool
 
 Inspired by [estraverse](https://github.com/estools/estraverse)
 
