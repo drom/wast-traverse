@@ -1,6 +1,51 @@
 'use strict';
 
-// var VisitorKeys = require('./visitor-keys');
+var VisitorKeys = {
+    assert_invalid: [ 'module', 'failure' ],
+    assert_return_nan: [ 'invoke' ],
+    assert_return: [ 'invoke', 'expr' ],
+    assert_trap: [ 'invoke', 'failure' ],
+    binop: [ 'left', 'right' ],
+    block: [ 'id', 'body' ],
+    break: [ 'id', 'expr' ],
+    call_import: [ 'id', 'expr' ],
+    call_indirect: [ 'id', 'expr' ],
+    call: [ 'id', 'expr' ],
+    case: [ 'body' ],
+    const: [],
+    cvtop: [ 'expr' ],
+    export: [],
+    failure: [],
+    func: [ 'id', 'params', 'result', 'body' ],
+    get_local: [ 'id' ],
+    grow_memory: [ 'expression' ],
+    has_feature: [],
+    identifier: [],
+    if: [ 'test', 'consequent', 'alternate' ],
+    import: [ 'id', 'params' ],
+    invoke: [ 'body' ],
+    label: [ 'id', 'body' ],
+    literal: [],
+    load: [ 'expr' ],
+    local: [ 'id' ],
+    loop: [ 'body', 'extra' ],
+    memory_size: [],
+    memory: [ 'segment' ],
+    module: [ 'body' ],
+    nop: [],
+    page_size: [],
+    param: [ 'id' ],
+    relop: [ 'left', 'right' ],
+    result: [],
+    return: [ 'expr' ],
+    script: [ 'body' ],
+    segment: [],
+    set_local: [ 'id', 'init' ],
+    store: [ 'addr', 'data' ],
+    switch: [ 'before', 'body', 'after' ],
+    type: [ 'id' ],
+    unop: [ 'expr' ]
+};
 
 function traverse (tree, visitors) {
     var enter, leave;
@@ -10,8 +55,7 @@ function traverse (tree, visitors) {
         nodeKind = node.kind;
         if (nodeKind) {
             enter(node, parent, tail);
-            // keys = VisitorKeys[nodeType];
-            keys = Object.keys(node);
+            keys = VisitorKeys[nodeKind];
             for (i = 0, ilen = keys.length; i < ilen; i++) {
                 key = keys[i];
                 limb = node[key];
