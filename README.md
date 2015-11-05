@@ -1,4 +1,5 @@
 # WebAssembly AST traversal tool
+[![NPM](https://badge.fury.io/js/wast-traverse.svg)](http://badge.fury.io/js/wast-traverse)  [![Travis](https://travis-ci.org/drom/wast-traverse.svg)](https://travis-ci.org/drom/wast-traverse)  [![appVeyor](https://ci.appveyor.com/api/projects/status/vg09awtk5rgargkb?svg=true)](https://ci.appveyor.com/project/drom/wast-traverse)
 
 Inspired by [estraverse](https://github.com/estools/estraverse)
 
