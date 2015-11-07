@@ -41,6 +41,7 @@ var VisitorKeys = {
     return: [ 'expr' ],
     script: [ 'body' ],
     segment: [],
+    select: [ 'test', 'consequent', 'alternate' ],
     set_local: [ 'id', 'init' ],
     store: [ 'addr', 'data' ],
     switch: [ 'before', 'body', 'after' ],
