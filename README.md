@@ -3,7 +3,6 @@
 [![Travis](https://travis-ci.org/drom/wast-traverse.svg)](https://travis-ci.org/drom/wast-traverse)
 [![appVeyor](https://ci.appveyor.com/api/projects/status/c2ustebsirnhostl?svg=true)](https://ci.appveyor.com/project/drom/wast-traverse)
 
-
 Inspired by [estraverse](https://github.com/estools/estraverse)
 
 ## Use
