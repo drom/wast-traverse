@@ -1,6 +1,6 @@
 {
   "name": "wast-traverse",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "webassembly traversal tool",
   "main": "index.js",
   "bin": {
