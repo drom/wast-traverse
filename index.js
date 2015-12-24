@@ -30,7 +30,7 @@ var VisitorKeys = {
     literal: [],
     load: [ 'expr' ],
     local: [ 'items' ],
-    loop: [ 'body', 'extra', 'body' ],
+    loop: [ 'body', 'extra' ],
     memory_size: [],
     memory: [ 'segment' ],
     module: [ 'body' ],
