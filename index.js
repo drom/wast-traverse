@@ -44,6 +44,7 @@ var VisitorKeys = {
     segment: [],
     select: [ 'test', 'consequent', 'alternate' ],
     set_local: [ 'id', 'init' ],
+    start: [ 'id' ],
     store: [ 'addr', 'data' ],
     table: [ 'items' ],
     tableswitch: [ 'id', 'test', 'table', 'body' ],
