@@ -49,7 +49,7 @@ var VisitorKeys = {
     type: [ 'id' ],
     unop: [ 'expr' ],
     unreachable: [  ]
-}
+};
 
 function traverse (tree, visitors) {
     var enter, leave;
