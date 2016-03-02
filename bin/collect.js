@@ -44,7 +44,7 @@ var total = {};
 
 function runner (fileName) {
     return function (err, data) {
-        var tree, res;
+        var tree, res, report;
         console.log(fileName);
         tree = jsof.p(data);
         res = {};
@@ -66,7 +66,17 @@ function runner (fileName) {
         });
         merge(total, res);
         console.log(res);
-        console.log(total);
+        report = '{'
+            + Object.keys(total).sort().map(function (key) {
+                return '\n    '
+                    + key + ': [ '
+                    + total[key].map(function (e) {
+                        return '\'' + e + '\'';
+                    }).join(', ')
+                    + ' ]';
+            }).join(',')
+            + '\n}\n';
+        console.log(report);
     };
 }
 
