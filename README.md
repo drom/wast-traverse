@@ -3,6 +3,7 @@
 [![Travis](https://travis-ci.org/drom/wast-traverse.svg)](https://travis-ci.org/drom/wast-traverse)
 [![appVeyor](https://ci.appveyor.com/api/projects/status/c2ustebsirnhostl?svg=true)](https://ci.appveyor.com/project/drom/wast-traverse)
 
+WebAssembly ([AST](https://github.com/drom/wast-spec)) traversal tool.
 Inspired by [estraverse](https://github.com/estools/estraverse)
 
 ## Use
