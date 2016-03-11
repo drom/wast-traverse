@@ -6,13 +6,13 @@ var VisitorKeys = {
     assert_return_nan: [ 'invoke' ],
     assert_trap: [ 'invoke', 'failure' ],
     binop: [ 'left', 'right' ],
-    block: [ 'id', 'body' ],
+    block: [ 'body' ],
     br: [ 'id', 'expr' ],
     br_if: [ 'id', 'test', 'expr' ],
+    br_table: [ 'expr', 'body' ],
     call: [ 'id', 'expr' ],
     call_import: [ 'id', 'expr' ],
     call_indirect: [ 'id', 'expr' ],
-    case: [ 'body' ],
     const: [  ],
     cvtop: [ 'expr' ],
     else: [ 'id', 'body' ],
@@ -45,12 +45,12 @@ var VisitorKeys = {
     start: [ 'id' ],
     store: [ 'addr', 'data' ],
     table: [ 'items' ],
-    tableswitch: [ 'id', 'test', 'table', 'body' ],
     then: [ 'id', 'body' ],
     type: [ 'id' ],
     unop: [ 'expr' ],
     unreachable: [  ]
-};
+}
+;
 
 function traverse (tree, visitors) {
     var enter, leave;
