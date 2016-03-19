@@ -6,7 +6,7 @@ var VisitorKeys = {
     assert_return_nan: [ 'invoke' ],
     assert_trap: [ 'invoke', 'failure' ],
     binop: [ 'left', 'right' ],
-    block: [ 'body', 'body' ],
+    block: [ 'body' ],
     br: [ 'id', 'expr' ],
     br_if: [ 'id', 'test', 'expr' ],
     br_table: [ 'expr', 'body' ],
