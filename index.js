@@ -6,7 +6,7 @@ var VisitorKeys = {
     assert_return_nan: [ 'invoke' ],
     assert_trap: [ 'invoke', 'failure' ],
     binop: [ 'left', 'right' ],
-    block: [ 'body' ],
+    block: [ 'body', 'body' ],
     br: [ 'id', 'expr' ],
     br_if: [ 'id', 'test', 'expr' ],
     br_table: [ 'expr', 'body' ],
@@ -16,14 +16,13 @@ var VisitorKeys = {
     const: [  ],
     cvtop: [ 'expr' ],
     else: [ 'id', 'body' ],
-    export: [ 'id' ],
-    failure: [  ],
+    export: [ 'name', 'id' ],
     func: [ 'id', 'param', 'result', 'body' ],
     get_local: [ 'id' ],
     grow_memory: [ 'expr' ],
     identifier: [  ],
     if: [ 'test', 'consequent', 'alternate' ],
-    import: [ 'id', 'params' ],
+    import: [ 'id', 'name1', 'name2', 'params' ],
     invoke: [ 'body' ],
     item: [  ],
     literal: [  ],
@@ -39,7 +38,7 @@ var VisitorKeys = {
     result: [  ],
     return: [ 'expr' ],
     script: [ 'body' ],
-    segment: [  ],
+    segment: [ 'name' ],
     select: [ 'test', 'consequent', 'alternate' ],
     set_local: [ 'id', 'init' ],
     start: [ 'id' ],
@@ -49,8 +48,7 @@ var VisitorKeys = {
     type: [ 'id' ],
     unop: [ 'expr' ],
     unreachable: [  ]
-}
-;
+};
 
 function traverse (tree, visitors) {
     var enter, leave;
