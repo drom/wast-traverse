@@ -32,6 +32,6 @@
     "mocha": "^2.4.5"
   },
   "dependencies": {
-    "wast-spec": "^0.7.0"
+    "wast-spec": "^0.8.0"
   }
 }
