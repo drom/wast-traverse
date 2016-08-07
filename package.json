@@ -24,12 +24,12 @@
   "homepage": "https://github.com/drom/wast-traverse#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "^2.7.0",
+    "eslint": "^2.13.1",
     "istanbul": "^0.4.4",
     "jsof": "^0.2.1",
-    "lodash.merge": "^4.4.0",
-    "lodash.union": "^4.4.0",
-    "mocha": "^2.5.3"
+    "lodash.merge": "^4.5.1",
+    "lodash.union": "^4.5.0",
+    "mocha": "^3.0.1"
   },
   "dependencies": {
     "wast-spec": "^0.11.0"
